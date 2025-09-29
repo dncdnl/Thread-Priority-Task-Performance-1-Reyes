@@ -11,7 +11,8 @@ namespace Thread_Priority_Task_Performance_1_Reyes
     {
         public static void Thread1()
         {
-            for(int x =0; x <= 2; x++)
+            // Create a thread for 2 times of looping
+            for (int x =0; x <= 2; x++)
             {
                 Thread thread = Thread.CurrentThread;
                 Console.WriteLine("Name of Thread:  " + thread.Name + " = " + x );
@@ -20,7 +21,13 @@ namespace Thread_Priority_Task_Performance_1_Reyes
         }
         public static void  Thread2()
         {
-
+            // creating a thread for 6 times of looping
+            for (int i = 0; i <= 6; i++)
+            {
+                Thread thread = Thread.CurrentThread;
+                Console.WriteLine("Name of Thread:  " + thread.Name + " = " + i);
+                Thread.Sleep(1500);
+            }
         }
     }
 }
