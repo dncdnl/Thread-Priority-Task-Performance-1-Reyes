@@ -47,6 +47,10 @@ namespace Thread_Priority_Task_Performance_1_Reyes
             threadB.Join();
             threadC.Join();
             threadD.Join();
+
+            //Displaying End of Thread
+            Console.WriteLine("-End of Thread-");
+            lblThread.Text = "-End of Thread-";
         }
     }
 }
