@@ -36,6 +36,12 @@ namespace Thread_Priority_Task_Performance_1_Reyes
             threadC.Priority = ThreadPriority.AboveNormal;
             threadD.Priority = ThreadPriority.BelowNormal;
 
+            //Adding thread names
+            threadA.Name = "Thread A Process";
+            threadB.Name = "Thread B Process";
+            threadC.Name = "Thread C Process";
+            threadD.Name = "Thread D Process";
+
             // Starting Threads
             threadA.Start();
             threadB.Start();
