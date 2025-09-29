@@ -26,9 +26,15 @@ namespace Thread_Priority_Task_Performance_1_Reyes
 
             // creating 4 threads name
             Thread threadA = new Thread(MyThreadClass.Thread1);
-            Thread threadB = new Thread(MyThreadClass.Thread1);
-            Thread threadC = new Thread(MyThreadClass.Thread2);
+            Thread threadB = new Thread(MyThreadClass.Thread2);
+            Thread threadC = new Thread(MyThreadClass.Thread1);
             Thread threadD = new Thread(MyThreadClass.Thread2);
+
+            //Creating Priority to the threads
+            threadA.Priority  = ThreadPriority.Highest;
+            threadB.Priority = ThreadPriority.Normal;
+            threadC.Priority = ThreadPriority.AboveNormal;
+            threadD.Priority = ThreadPriority.BelowNormal;
         }
     }
 }
