@@ -41,6 +41,12 @@ namespace Thread_Priority_Task_Performance_1_Reyes
             threadB.Start();
             threadC.Start();
             threadD.Start();
+
+            //Joining Threads
+            threadA.Join();
+            threadB.Join();
+            threadC.Join();
+            threadD.Join();
         }
     }
 }
