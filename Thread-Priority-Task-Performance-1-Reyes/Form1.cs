@@ -35,6 +35,12 @@ namespace Thread_Priority_Task_Performance_1_Reyes
             threadB.Priority = ThreadPriority.Normal;
             threadC.Priority = ThreadPriority.AboveNormal;
             threadD.Priority = ThreadPriority.BelowNormal;
+
+            // Starting Threads
+            threadA.Start();
+            threadB.Start();
+            threadC.Start();
+            threadD.Start();
         }
     }
 }
